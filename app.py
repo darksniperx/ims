@@ -1,10 +1,9 @@
 import os
-from flask import Flask
-from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackQueryHandler
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from flask import Flask, request
+from telegram.ext import Application, CommandHandler, MessageHandler, filters
+from telegram import Update, Bot
 import pandas as pd
 from pymongo import MongoClient
-from telegram import Bot
 import logging
 
 # Setup logging
